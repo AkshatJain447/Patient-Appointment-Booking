@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{    
+    background-image: url(images/bgc.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+nav{
+    display: flex;
+    height: 13vh;
+    justify-content: space-between;
+    padding: auto;
+    align-items: center;
+}
+nav div{
+    margin: 10px;
+}
+li{
+    list-style:none;
+}
+.logo{
+    height: 9vh;
+}
+.logo1{
+    width: 15vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: turquoise;
+}
+.logo1 h3{
+    background: -webkit-linear-gradient(rgb(28, 238, 1), rgb(23, 63, 239));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.1s linear;
+}
+.logo1 h3:hover{    
+    font-size: 1.85em;
+}
+.logo2{
+    display: flex;
+    justify-content: space-around;
+    width: 62vw;
+}
+.logo2 a{    
+    font-size: 1.5em;
+    transition: all 0.1s linear;
+}
+.logo2 a:hover{
+    font-size: 1.6em;
+    text-shadow: 1px 1px 2px gray;
+}
+.logo3{
+    background-color: white;
+    border: 1px solid teal;
+    margin-right: 30px;
+    width: 10vw;
+    height: 6vh;
+    font-size: 1.3em;
+    border-radius: 5px;
+    transition: all 0.15s linear;
+}
+.logo3:hover{
+    font-size: 1.4em;
+    background-color: teal;
+    color: white;
+    width: 10.5vw;
+    box-shadow: 2px 2px 4px gray;
+}
+.logo3 a:hover{
+    color: white;
+}
+.bodyA{
+    width: 90vw;
+    margin: auto;
+}
+.main1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin-top: 20px;
+}
+#main1A{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#mainA{
+    font-family: serif;
+    /* font-family: 'Oleo Script', cursive; */
+    margin-left: 20px;
+    width: 60vw;
+    font-size: 4.5em;
+    margin-bottom: 30px;
+    font-weight:600;
+}
+#mainABB{
+    margin-left: 20px;
+}
+#mainABB input{
+    text-align: center;
+    font-size: 1.1em;
+}
+#doctor1{
+    color: teal;
+    text-decoration: underline 4px;
+}
+#mainAA{
+    font-size: 22px;
+    font-family:serif;
+    font-style: italic;
+}
+#mainAB{
+    font-size: 16px;
+    font-weight: 500;
+}
+.mainB{
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid teal;
+    height: 7vh;
+    width: 11vw;
+    box-shadow: 0px 0px 2px gray;
+    transition: all 0.1s linear;
+}
+.mainB:hover{
+    height: 7.2vh;
+    width: 11.2vw;
+    background-color: rgba(255, 255, 255, 0.382);
+}
+.mainBA{
+    background-color: transparent;
+    height: 6.9vh;
+    width: 15vw;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: 2px solid teal;
+    transition: all 0.2s linear;
+}
+.mainBA:hover{
+    width: 16vw;
+    background-color: teal;
+    cursor: pointer;
+    color: white;
+    box-shadow: 2px 2px 4px gray;
+}
+#mainC{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10vh;
+}
+.mainC{
+    height: 50vh;
+    width: 20vw;
+    transition: all 0.1s linear;
+}
+.mainC:hover{
+    border: 1px solid rgb(226, 226, 226);
+    box-shadow: 1px 1px 2px black;
+    width: 20.3vw;
+    height: 50.3vh;
+    background-color: rgb(250, 253, 255);
+}
+.mainCA{
+    height: 75%;
+}
+.mainCA2{
+    height: 70%;
+}
+.mainCB{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.mainCB2{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 30px;
+}
+#mainimg{
+    width: 30vw;
+    margin-bottom: 60px;
+}
+#aboutus{
+    display: flex;
+    gap: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(255, 255, 255);
+    padding: 1vw;
+    border: 1px solid black;
+    margin-top: 10vh;
+    text-align: justify;
+    border-radius: 10px;
+}
+#aboutus h2{
+    text-shadow: 1px 1px 2px rgba(171, 167, 167, 0.914);
+}
+#aboutus div img{
+    width: auto;
+    height: 25vh;
+}
+.footerA{
+    font-weight: 500;
+    margin: 3vh;
+    text-align: center;
+}
+#mainCAA{
+    background-image: url(images/Wavy_Tech-25_Single-07-1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#mainCAB{
+    background-image: url(images/5642615-1.png);
+    background-size: 100% 80%;
+    background-repeat: no-repeat;
+}
+#mainCAC{
+    background-image: url(images/physician_18-1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patient Details</title>
+    <link rel="stylesheet" href="pt1.css">
+</head>
+
+<body>
+    <div class="header">
+        <div>
+            <nav>
+                <div class="logo1">
+                    <img src="medical-logo.png" alt="logo" class="logo" loading="lazy">
+                    <h3>HEALERS</h3>
+                </div>
+                <div class="logo2">
+                    <a href="index.html"><span>Home</span></a>
+                    <a href="index.html"><span>About Us</span></a>
+                </div>
+                <div>
+                    <a href="contactus.html"><button class="logo3">Contact Us</button></a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <h1 class="mainhead">Medical Profile</h1>
+    <div style="border-radius: 10px;" class="container">
+        <div class="profile-container">
+            <div class="profile-photo">
+                <img src="images/profile2.jpeg" alt="Patient Photo" />
+            </div>
+            <div class="profile-details">
+                <h2 style="text-align: center;">Patient Details</h2>
+                <hr style="width: 85%; margin: 20px;">
+                <p><strong>Name:</strong> Rohit</p>
+                <p><strong>Age:</strong> 35</p>
+                <p><strong>Gender:</strong> Male</p>
+                <p><strong>Location:</strong> Chandigarh</p>
+                <hr style="width: 85%; margin: 20px;">
+                <p><strong>Blood-Group: </strong> A+</p>
+                <p><strong>Height: </strong>170cm</p>
+                <p><strong>Weight: </strong>65kg</p>
+            </div>
+        </div>
+        <div class="reports" style="margin-top: 10px;">
+            <div class="medicalreport">
+                <button class="tab-button" id="tab1">
+                    <a href="medical.html" class="tdlink"><img class="reportimg" src="images/medical_report.png" alt="report" /></a>
+                </button>
+                <h2 style="text-align: center; margin-top: 15px;">Medical History</h2>
+            </div>
+            <div class="testreport">
+                <button class="tab-button1" id="tab1">
+                    <a href="trys3.html" class="tdlink">
+                        <img src="images/testreport.png" class="reportimg" alt="report">
+                    </a>
+                </button>
+                <h2 style="margin-top: 15px;">Test Reports</h2>
+            </div>
+        </div>
+    </div>
+    <div>
+        <footer>
+            <p class="footerA">
+                Copyright &copy; 2023 All rights reserved, Healers.
+            </p>
+        </footer>
+    </div>
+    <script>
+        const buttons = document.querySelectorAll(".tab-button");
+        const contents = document.querySelectorAll(".tab-content");
+
+        buttons.forEach((button) => {
+            button.addEventListener("click", () => {
+                buttons.forEach((btn) => btn.classList.remove("active"));
+                contents.forEach((content) => content.classList.remove("active"));
+
+                button.classList.add("active");
+                const contentId = button.id.replace("tab", "content");
+                document.getElementById(contentId).classList.add("active");
+            });
+        });
+        buttons[0].click();
+    </script>
+</body>
+</html>

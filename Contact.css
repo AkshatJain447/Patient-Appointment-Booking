@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{    
+    background-image: url(images/bgc.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+nav{
+    display: flex;
+    height: 13vh;
+    justify-content: space-between;
+    padding: auto;
+    align-items: center;
+}
+nav div{
+    margin: 10px;
+}
+li{
+    list-style:none;
+}
+.logo{
+    height: 9vh;
+}
+.logo1{
+    width: 15vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: turquoise;
+}
+.logo1 h3{
+    background: -webkit-linear-gradient(rgb(28, 238, 1), rgb(23, 63, 239));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.1s linear;
+}
+.logo1 h3:hover{    
+    font-size: 1.85em;
+}
+.logo2{
+    display: flex;
+    justify-content: space-around;
+    width: 20vw;
+}
+.logo2 a{    
+    font-size: 1.5em;
+    transition: all 0.1s linear;
+}
+.logo2 a:hover{
+    font-size: 1.6em;
+    text-shadow: 1px 1px 2px gray;
+}
+li{
+    list-style-type: none;
+    font-size: 1.7em;
+}
+
+.mainbody{
+    border: 2px solid black;
+    border-radius: 8px;
+    margin: auto;
+    width: 80vw;
+    padding: 20px;
+}
+
+#logo1{
+    height: 100px;
+}
+a{
+    color: black;
+}
+
+a:hover{
+    font-size: 32px;
+    text-decoration: none;
+}
+
+.navmain{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+}
+
+#mainPart{
+    margin-top: 50px;
+    width: 100vw;
+    height: 70vh;
+}
+.footerA{
+    font-weight: 500;
+    margin: 3vh;
+    text-align: center;
+}

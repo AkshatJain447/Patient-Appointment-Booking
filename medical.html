@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical History</title>
+    <!-- Link to Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="medical.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <div class="header">
+        <div>
+            <nav>
+                <div class="logo1">
+                    <img src="medical-logo.png" alt="logo" class="logo" loading="lazy">
+                    <h3>HEALERS</h3>
+                </div>
+                <div class="logo2">
+                    <a href="index.html"><span>Home</span></a>
+                    <a href="index.html"><span>About Us</span></a>
+                </div>
+                <div>
+                    <a href="contactus.html"><button class="logo3">Contact Us</button></a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Medical History</h1>
+        <h2>Patient Information</h2>
+        <table class="table table-bordered">
+            <tbody>
+                <tr><B>
+                        <th>Patient Name</th>
+                        <td>Arjun</td>
+                        <th>Physician</th>
+                        <td>Dr. Shayam</td>
+                    </B>
+                </tr>
+                <tr>
+                    <th>Age</th>
+                    <td>35</td>
+                    <th>Pharmacy</th>
+                    <td>ABC Pharmacy</td>
+                </tr>
+                <tr>
+                    <th>Gender</th>
+                    <td>Male</td>
+                    <th>Location</th>
+                    <td>Healers</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Medical History</h2>
+        <table class="table table-bordered">
+            <thead>
+                <tr><B>
+                        <th>Date</th>
+                        <th>Event</th>
+                        <th>Prescription</th>
+                        <th>Remedies</th>
+                    </B>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2023-09-01</td>
+                    <td>Initial Consultation</td>
+                    <td>Rest and Hydration</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>2023-09-05</td>
+                    <td>Follow-up Appointment</td>
+                    <td>Antibiotics</td>
+                    <td>Amoxicillin</td>
+                </tr>
+                <tr>
+                    <td>2023-09-10</td>
+                    <td>Emergency Visit</td>
+                    <td>X-ray and Painkillers</td>
+                    <td>Ibuprofen</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+        <h2>Upload Medical Record</h2>
+        <form>
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" class="form-control" id="date" required>
+            </div>
+            <div class="form-group">
+                <label for="event">Event:</label>
+                <input type="text" class="form-control" id="event" required>
+            </div>
+            <div class="form-group">
+                <label for="prescription">Prescription:</label>
+                <textarea class="form-control" id="prescription" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="remedies">Remedies:</label>
+                <textarea class="form-control" id="remedies" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <div>
+        <footer>
+            <p class="footerA">
+                Copyright &copy; 2023 All rights reserved, Healers.
+            </p>
+        </footer>
+    </div>
+    <!-- Link to Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

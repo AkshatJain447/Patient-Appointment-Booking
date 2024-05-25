@@ -1,0 +1,441 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    margin: 5px;
+    border-radius: 30px;
+    background-color: rgb(173, 165, 247);
+    display: flex;
+    height: 8vh;
+    justify-content: start;
+    padding: auto;
+    align-items: center;
+}
+
+nav div {
+    margin: 10px;
+}
+
+li {
+    list-style: none;
+}
+
+.logo {
+    height: 7vh;
+}
+
+.logo1 {
+    width: 15vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: turquoise;
+}
+
+.logo1 h3 {
+    background: -webkit-linear-gradient(rgb(28, 238, 1), rgb(23, 63, 239));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.1s linear;
+}
+
+.logo1 h3:hover {
+    font-size: 1.85em;
+}
+
+.logo2 {
+    position: relative;
+    left: 200px;
+    display: flex;
+    justify-content: space-around;
+    width: 40vw;
+}
+
+.logo2 a {
+    font-size: 1.5em;
+    transition: all 0.1s linear;
+}
+
+.logo2 a:hover {
+    font-size: 1.6em;
+    text-shadow: 1px 1px 2px gray;
+}
+
+.logo3 {
+    border: none;
+    background-color: transparent;
+    margin-right: 30px;
+    width: 10vw;
+    height: 6vh;
+    font-size: 1.5em;
+    border-radius: 5px;
+    transition: all 0.15s linear;
+}
+
+.logo3:hover {
+    font-size: 1.6em;
+    width: 10.5vw;
+}
+
+.searchBarA {
+    width: 70%;
+    position: relative;
+    left: 25vw;
+}
+
+/* Body */
+body {
+    background-image: url(images/bgc.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.form button {
+    border: none;
+    background: none;
+    color: #8b8ba7;
+}
+
+/* styling of whole input container */
+.form {
+    position: relative;
+    left: 40vw;
+    --timing: 0.3s;
+    --width-of-input: 200px;
+    --height-of-input: 40px;
+    --border-height: 2px;
+    --input-bg: #fff;
+    --border-color: #b7b7f3;
+    --border-radius: 30px;
+    --after-border-radius: 1px;
+    position: relative;
+    width: var(--width-of-input);
+    height: var(--height-of-input);
+    display: flex;
+    align-items: center;
+    padding-inline: 0.8em;
+    border-radius: var(--border-radius);
+    transition: border-radius 0.5s ease;
+    background: var(--input-bg, #fff);
+}
+
+#formdiv {
+    margin-top: 20px;
+    display: flex;
+    gap: 220px;
+}
+
+/* styling of Input */
+.input {
+    font-size: 0.9rem;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+}
+
+/* styling of animated border */
+.form:before {
+    content: "";
+    position: absolute;
+    background: var(--border-color);
+    transform: scaleX(0);
+    transform-origin: center;
+    width: 100%;
+    height: var(--border-height);
+    left: 0;
+    bottom: 0;
+    border-radius: 1px;
+    transition: transform var(--timing) ease;
+}
+
+/* Hover on Input */
+.form:focus-within {
+    border-radius: var(--after-border-radius);
+}
+
+input:focus {
+    outline: none;
+}
+
+/* here is code of animated border */
+.form:focus-within:before {
+    transform: scale(1);
+}
+
+.reset {
+    border: none;
+    background: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* close button shown when typing */
+input:not(:placeholder-shown)~.reset {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* sizing svg icons */
+.form svg {
+    width: 17px;
+    margin-top: 3px;
+}
+
+main {
+    font-family: 'Baloo Bhai 2';
+    position: relative;
+    top: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+h1 {
+    width: 80%;
+    position: relative;
+    left: 160px;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(171, 167, 167, 0.914);
+}
+
+.vl{
+    border-left: 2px solid black;
+    height: 95%;
+    position: absolute;
+    left: 35%;
+    margin-left: -3px;
+    top: 20px;
+}
+
+.hl{
+    border-top: 2px solid black;
+    width: 1150px;
+    position: absolute;
+    left:3%;
+    margin-left: -3px;
+    top: 70px;
+}
+.vl1{
+    border-left: 2px solid black;
+    height: 95%;
+    position: absolute;
+    left: 65%;
+    margin-left: -3px;
+    top: 20px;
+}
+
+td:first-child, th:first-child {
+    border-left: none;
+}
+
+.mainTable {
+    width: 100%;
+}
+
+.mainTable thead th {
+    border-radius: 10px;
+    height: 7vh;
+    width: 15vw;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+#spcol {
+    border: 0px;
+}
+
+table tbody tr {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+table {
+    padding: 10px;
+    border: 2px solid black;
+    background-color: rgba(255, 255, 255, 0.432);
+    box-shadow: 1px 1px 2px rgba(128, 128, 128, 0.447);
+    border-radius: 20px;
+    border-spacing: 100px 10px;
+    border-collapse: separate !important;
+    position: relative;
+    top: 1vh;
+    /* left: 5vw; */
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 450px;
+    width: 120px;
+    height: 40px;
+    gap: 10px;
+    background-color: rgb(173, 165, 247);
+    border-radius: 30px;
+    color: rgb(19, 19, 19);
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition-duration: .2s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
+    padding-left: 8px;
+    transition-duration: .5s;
+}
+
+.svgIcon {
+    height: 25px;
+    transition-duration: 1.5s;
+}
+
+.bell path {
+    fill: rgb(19, 19, 19);
+}
+
+.button:hover {
+    background-color: rgb(147, 135, 255);
+    transition-duration: .5s;
+}
+
+.button:active {
+    transform: scale(0.97);
+    transition-duration: .2s;
+}
+
+.button:hover .svgIcon {
+    transform: rotate(250deg);
+    transition-duration: 1.5s;
+}
+
+.pId {
+    height: 7vh;
+    text-align: center;
+}
+
+.pName {
+
+    height: 7vh;
+    text-align: center;
+}
+
+.pBtn {
+    text-align: center;
+}
+
+.button1 {
+    border: 1.5px solid teal;
+    background-color: transparent;
+    height: 6vh;
+    width: 10vw;
+    border-radius: 5px;
+    transition: all 0.1s ease-in-out;
+}
+
+.button1:hover {
+    height: 6.5vh;
+    width: 11.5vw;
+    color: white;
+    box-shadow: 1px 1px 3px gray;
+    background-color: teal;
+}
+
+/* footer */
+.footerA {
+    font-weight: 500;
+    margin-top: 5vh;
+    text-align: center;
+}
+
+.button2 {
+    display: inline-block;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    color: #090909;
+    padding: 0.7em 1.7em;
+    font-size: 18px;
+    border-radius: 1.0em;
+    background: #f4f4f4;
+    border: 1px solid #e8e8e8;
+    box-shadow: 6px 6px 12px #c5c5c5,
+        -6px -6px 12px #ffffff;
+}
+
+.button2:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5,
+        inset -4px -4px 12px #ffffff;
+}
+
+.button2:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.button2:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #e3efff;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.button2:hover {
+    border: 1px solid #e3efff;
+    font-weight: 600;
+}
+
+.button2:hover:before {
+    top: -35%;
+    background-color: #e3efff;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.button2:hover:after {
+    top: -45%;
+    background-color: #e3efff;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Register</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<!--===============================================================================================-->
+</head>
+
+<body>
+	<div class="loader">
+		<div class="heartbeatloader">
+			<svg class="svgdraw" width="100%" height="100%" viewBox="0 0 150 400" xmlns="http://www.w3.org/2000/svg">
+				<path class="path"
+					d="M 0 200 l 40 0 l 5 -40 l 5 40 l 10 0 l 5 15 l 10 -140 l 10 220 l 5 -95 l 10 0 l 5 20 l 5 -20 l 30 0"
+					fill="transparent" stroke-width="4" stroke="black"></path>
+			</svg>
+			<div class="innercircle"></div>
+			<div class="outercircle"></div>
+		</div>
+	</div>
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div>
+					<div class="login100-pic js-tilt" data-tilt id="logoh">
+						<img src="images/medical-logo.png" alt="IMG">
+					</div>
+					<h1 id="titleh">HEALERS</h1>
+				</div>
+
+
+				<form class="login100-form validate-form">
+					<span class="login100-form-title">
+						Register Doctor
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate="Valid Phone no. is required">
+						<input class="input100" type="tel" name="tel" placeholder="Phone no." id="phno" country="india">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-phone" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="wrap-input100" data-validate="OTP is required">
+						<input class="input100" type="text" name="pass" placeholder="OTP" id="otpin">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+					</div>
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn" id="sendotpbtn">
+							Get OTP
+						</button>
+					</div>
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn" id="verifyotp">
+							Register
+						</button>
+					</div>
+
+					<div class="text-center p-t-70">
+						<a class="txt2" href="login.html">
+							Login your Account
+							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script>
+		$('.js-tilt').tilt({
+			scale: 1.05
+		})
+	</script>
+	<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+	<script>
+		let logoh = document.getElementById("logoh");
+		let titleh = document.getElementById("titleh");
+		logoh.addEventListener("mouseover", function () {
+			titleh.style.textShadow = "0px 0px 3px rgba(0, 255, 0, 0.45), 0px 0px 3px rgba(0, 0, 255, 0.45)";
+		});
+		logoh.addEventListener("mouseout", function () {
+			titleh.style.textShadow = "";
+		});
+		setTimeout(function () {
+			// Remove the loading spinner when your content is ready.
+			document.querySelector('.loader').style.display = 'none';
+		}, 1500);
+		setTimeout(function () {
+			// Remove the loading spinner when your content is ready.
+			document.querySelector('.limiter').style.display = 'block';
+		}, 1500);
+	</script>
+	<script type="module">
+		import { initializeApp } from "firebase/app";
+		import { getAuth, RecaptchaVerifier } from "firebase/auth";
+		
+		const firebaseConfig = {
+			apiKey: "AIzaSyAf6fPep9qfKbzUnJkj2q3d06HQX-kXX1U",
+			authDomain: "medicine-2f749.firebaseapp.com",
+			databaseURL: "https://medicine-2f749-default-rtdb.asia-southeast1.firebasedatabase.app",
+			projectId: "medicine-2f749",
+			storageBucket: "medicine-2f749.appspot.com",
+			messagingSenderId: "976722600949",
+		    appId: "1:976722600949:web:b897e92e69a857b2a3f6bc",
+		    measurementId: "G-GDR77KD42H"
+		};
+
+		const app = initializeApp(firebaseConfig);
+		const auth = getAuth(app);
+		auth.useDeviceLanguage();
+		window.recaptchaVerifier = new RecaptchaVerifier(auth, 'recaptcha-container', {});
+
+		const phoneNumber = getPhoneNumberFromUserInput();
+		const appVerifier = window.recaptchaVerifier;
+		signInWithPhoneNumber(auth, phoneNumber, appVerifier)
+			.then((confirmationResult) => {
+				window.confirmationResult = confirmationResult;
+			}).catch((error) => {
+				
+		});
+		const code = getCodeFromUserInput();
+		confirmationResult.confirm(code).then((result) => {
+			const user = result.user;
+			}).catch((error) => {
+		});
+	</script>
+</body>
+</html>

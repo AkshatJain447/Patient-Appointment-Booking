@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    display: flex;
+    height: 13vh;
+    justify-content: space-between;
+    padding: auto;
+    align-items: center;
+}
+
+nav div {
+    margin: 10px;
+}
+
+li {
+    list-style: none;
+}
+
+.logo {
+    height: 9vh;
+}
+
+.logo1 {
+    width: 15vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: turquoise;
+}
+
+.logo1 h3 {
+    background: -webkit-linear-gradient(rgb(28, 238, 1), rgb(23, 63, 239));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.1s linear;
+}
+
+.logo1 h3:hover {
+    font-size: 1.85em;
+}
+
+.logo2 {
+    display: flex;
+    justify-content: space-around;
+    width: 20vw;
+}
+
+.logo2 a {
+    font-size: 1.5em;
+    transition: all 0.1s linear;
+}
+
+.logo2 a:hover {
+    font-size: 1.6em;
+    text-shadow: 1px 1px 2px gray;
+}
+
+.logo3 {
+    background-color: white;
+    border: 1px solid teal;
+    margin-right: 30px;
+    width: 10vw;
+    height: 6vh;
+    font-size: 1.3em;
+    border-radius: 5px;
+    transition: all 0.15s linear;
+}
+
+.logo3:hover {
+    font-size: 1.4em;
+    background-color: teal;
+    color: white;
+    width: 10.5vw;
+    box-shadow: 2px 2px 4px gray;
+}
+
+.searchBarA {
+    width: 70%;
+    position: relative;
+    left: 25vw;
+}
+
+/* Body */
+body {
+    background-image: url(images/bgc.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.bodyA {
+    margin: auto;
+    width: 90%;
+}
+
+.mainA {
+    padding: 10px;
+}
+
+.mainA h2 {
+    font-size: 2.3em;
+    text-shadow: 1px 1px 2px gray;
+}
+
+.mainB {
+    margin: 10px;
+}
+
+thead {
+    height: 7vh;
+}
+
+th {
+    background-color: rgb(174, 204, 230);
+    border-radius: 10px;
+}
+
+.mainB th {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-shadow: 1px 1px 1px gray;
+}
+
+.mainB tbody {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.mainB td {
+    font-size: 1.0em;
+    transition: all 0.1s linear;
+}
+
+.mainB td:hover {
+    font-size: 1.1em;
+}
+.labs {
+    display: inline-block;
+    width: 200px;
+}
+/* footer */
+.footerA {
+    font-weight: 500;
+    margin: 3vh;
+    text-align: center;
+}

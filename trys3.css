@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    display: flex;
+    height: 13vh;
+    justify-content: space-between;
+    padding: auto;
+    align-items: center;
+}
+
+nav div {
+    margin: 10px;
+}
+
+li {
+    list-style: none;
+}
+
+.logo {
+    height: 9vh;
+}
+
+.logo1 {
+    width: 15vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: turquoise;
+}
+
+.logo1 h3 {
+    background: -webkit-linear-gradient(rgb(28, 238, 1), rgb(23, 63, 239));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.1s linear;
+}
+
+.logo1 h3:hover {
+    font-size: 1.85em;
+}
+
+.logo2 {
+    display: flex;
+    justify-content: space-around;
+    width: 20vw;
+}
+
+.logo2 a {
+    font-size: 1.5em;
+    transition: all 0.1s linear;
+}
+
+.logo2 a:hover {
+    font-size: 1.6em;
+    text-shadow: 1px 1px 2px gray;
+}
+
+.logo3 {
+    background-color: white;
+    border: 1px solid teal;
+    margin-right: 30px;
+    width: 10vw;
+    height: 6vh;
+    font-size: 1.3em;
+    border-radius: 5px;
+    transition: all 0.15s linear;
+}
+
+.logo3:hover {
+    font-size: 1.4em;
+    background-color: teal;
+    color: white;
+    width: 10.5vw;
+    box-shadow: 2px 2px 4px gray;
+}
+body {
+    background-image:url(images/bgc.png);
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.test-report {
+    margin-bottom: 20px;
+}
+.img-fluid {
+    align-items: center;
+    image-rendering: auto;
+    border-image: fill;
+    width: 400;
+    height: 400;
+}
+.footerA {
+    font-weight: 500;
+    margin-top: 5vh;
+    text-align: center;
+}

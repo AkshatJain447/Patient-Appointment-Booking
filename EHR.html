@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="EHR.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&family=Oleo+Script&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <div class="header">
+        <div>
+            <nav>
+                <div class="logo1">
+                    <img src="medical-logo.png" alt="logo" class="logo" loading="lazy">
+                    <h3>HEALERS</h3>
+                </div>
+                <div class="logo2">
+                    <a href="index.html"><span>Home</span></a>
+                    <a href="index.html"><span>About Us</span></a>
+                    <a href="contactus.html"><span>Contact Us</span></a>
+                </div>
+            </nav>
+        </div>
+        <div>
+                <h1>Electronic Health Record Dashboard</h1>
+                <!-- <h2> </h2> -->
+        </div>
+        <div id="formdiv">
+            <form class="form">
+                <button>
+                    <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="search">
+                        <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9" stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+                <input class="input" placeholder="Search by Id" required="" type="text">
+                <button class="reset" type="reset">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </form>
+            <button class="button" onclick="search()">
+                <svg class="svgIcon" viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"></path></svg>
+               Search
+             </button>             
+        </div>
+    </div>
+    <div>
+        <div>
+            <main>
+                <div>
+                    <table class="mainTable">
+                        <thead>
+                            <th>Unique Id</th>
+                            <th>Patient Name</th>
+                            <th>Data</th>
+                        </thead>
+                        <tbody>
+                            <div class="hl"></div>
+                            <div class="vl"></div>
+                            <div class="vl1"></div>
+                            <tr>
+                                <td class="pId">122451</td>
+                                <td class="pName">Arjun Sharma</td>
+                                <td class="pBtn">
+                                    <a href="pt1.html"><button class="button2">View Details</button></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pId">122452</td>
+                                <td class="pName">Rajat Jain</td>
+                                <td class="pBtn">
+                                    <a href="pt2.html"><button class="button2">View Details</button></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pId">122453</td>
+                                <td class="pName">Priya Gupta</td>
+                                <td class="pBtn">
+                                    <a href="pt3.html"><button class="button2">View Details</button></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pId">122454</td>
+                                <td class="pName">Aishwarya Rai</td>
+                                <td class="pBtn">
+                                    <a href="pt4.html"><button class="button2">View Details</button></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pId">122455</td>
+                                <td class="pName">Sanya Mirja</td>
+                                <td class="pBtn">
+                                    <a href="pt5.html"><button class="button2">View Details</button></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pId">122456</td>
+                                <td class="pName">Aryan Kapoor</td>
+                                <td class="pBtn">
+                                    <a href="pt6.html"><button class="button2">View Details</button></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pId">122457</td>
+                                <td class="pName">Ananya Panday</td>
+                                <td class="pBtn">
+                                    <a href="pt7.html"><button class="button2">View Details</button></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pId">122458</td>
+                                <td class="pName">Vikram Betaal</td>
+                                <td class="pBtn">
+                                    <a href="pt8.html"><button class="button2">View Details</button></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pId">122459</td>
+                                <td class="pName">Rohit Sharma</td>
+                                <td class="pBtn">
+                                    <a href="pt9.html"><button class="button2">View Details</button></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pId">122460</td>
+                                <td class="pName">Meera Bai</td>
+                                <td class="pBtn">
+                                    <a href="pt10.html"><button class="button2">View Details</button></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </div>
+        <div>
+            <footer>
+                <p class="footerA">
+                    Copyright &copy; 2023 All rights reserved, Healers.
+                </p>
+            </footer>
+        </div>
+    </div>
+    <script>
+        function search() {
+            // Get the search input values
+            const uniqueIdInput = document.querySelector('.input:first-child');
+            const patientNameInput = document.querySelector('.input:last-child');
+
+            // Filter the rows based on the search input values
+            document.querySelectorAll('.mainTable tbody tr').forEach(row => {
+                const uniqueId = row.querySelector('.pId').textContent;
+                const patientName = row.querySelector('.pName').textContent;
+
+                if (uniqueId?.includes(uniqueIdInput?.value) || patientName?.includes(patientNameInput?.value)) {
+                    row.style.display = '';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
+

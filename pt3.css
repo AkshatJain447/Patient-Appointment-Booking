@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    display: flex;
+    height: 13vh;
+    justify-content: space-between;
+    padding: auto;
+    align-items: center;
+}
+
+nav div {
+    margin: 10px;
+}
+
+li {
+    list-style: none;
+}
+
+.logo {
+    height: 9vh;
+}
+
+.logo1 {
+    width: 15vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: turquoise;
+}
+
+.logo1 h3 {
+    background: -webkit-linear-gradient(rgb(28, 238, 1), rgb(23, 63, 239));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.1s linear;
+    font-size: 1.75em;
+}
+
+.logo1 h3:hover {
+    font-size: 1.85em;
+}
+
+.logo2 {
+    display: flex;
+    justify-content: space-around;
+    width: 20vw;
+}
+
+.logo2 a {
+    font-size: 1.5em;
+    transition: all 0.1s linear;
+}
+
+.logo2 a:hover {
+    font-size: 1.6em;
+    text-shadow: 1px 1px 2px gray;
+}
+
+.logo3 {
+    background-color: white;
+    border: 1px solid teal;
+    margin-right: 30px;
+    width: 10vw;
+    height: 6vh;
+    font-size: 1.3em;
+    border-radius: 5px;
+    transition: all 0.15s linear;
+}
+
+.logo3:hover {
+    font-size: 1.4em;
+    background-color: teal;
+    color: white;
+    width: 10.5vw;
+    box-shadow: 2px 2px 4px gray;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(images/bgc.png);
+}
+
+h1 {
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.432);
+    box-shadow: 1px 1px 2px rgba(128, 128, 128, 0.447);
+}
+.mainhead{
+    width: 60%;
+    margin: auto;
+
+}
+.patient-info {
+    margin-bottom: 20px;
+}
+
+.test-reports {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.test-reports th,
+.test-reports td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.test-reports th {
+    background-color: #007acc;
+    color: #fff;
+}
+
+.test-reports tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:active {
+    color: black;
+}
+
+.tab-button {
+    background-color: transparent;
+    width: 150px;
+    height: 150px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+}
+
+.tab-button:hover {
+    border: 1px solid rgb(235, 235, 235);
+    width: 160px;
+    height: 160px;
+    box-shadow: 1px 1px 2px black;
+    background-color: white;
+}
+
+.tab-button1 {
+    background-color: transparent;
+    width: 150px;
+    height: 150px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+}
+
+.tab-button1:hover {
+    border: 1px solid rgb(235, 235, 235);
+    width: 160px;
+    height: 160px;
+    box-shadow: 1px 1px 2px black;
+    background-color: white;
+}
+
+.reportimg {
+    width: 150px;
+    border-radius: 15px;
+    transition: all 0.15s linear;
+}
+
+.reportimg:hover {
+    width: 160px;
+    border-radius: 15px;
+}
+
+/* Content for the tabs */
+.tab-content {
+    display: none;
+}
+
+/* Display the active tab content */
+.tab-content.active {
+    display: block;
+}
+
+.profile-photo {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-photo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 140px;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.profile-details {
+    flex: 1;
+    padding: 20px;
+    padding-left: 70px;
+    border-left: 1px solid #ccc;
+}
+
+.reports {
+    display: flex;
+    justify-content: space-around;
+}
+
+.medicalreport {
+    width: 17vw;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.testreport {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+footer {
+    position: sticky;
+    text-align: center;
+    margin-bottom: 15px;
+}
