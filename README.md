@@ -41,7 +41,7 @@ A responsive and minimal appointment booking system for hospitals and clinics. T
 ![Dashboard](./screenshots/PAB_Home.png)
 
 ### 🗂️ Appointment DashBoard
-![Details Modal](./screenshots/Appointment_DashBoard.png)
+![Details Modal](./screenshots/Appointment_Dashboard.png)
 
 ---
 
